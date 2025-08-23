@@ -1,0 +1,75 @@
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  background-color: #f3e5f5;
+  color: black;
+  margin: 0;
+  padding: 10px;
+}
+.accessibility-panel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.form-box, .reminders-box {
+  background-color: white;
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  border-radius: 10px;
+}
+.reminders-box {
+  background-color: #fff9c4;
+}
+button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+textarea, input, select {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.amount-row {
+  display: flex;
+  gap: 10px;
+}
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+.save-button {
+  background-color: #4CAF50;
+  color: white;
+}
+.clear-button {
+  background-color: #FF9800;
+  color: white;
+}
+.high-contrast {
+  background-color: black;
+  color: white;
+}
+.dyslexia-font {
+  font-family: 'OpenDyslexic', Arial, sans-serif;
+}
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  .accessibility-panel, .form-box, .button-row, .reminders-box button {
+    display: none;
+  }
+  .reminders-box {
+    background: white;
+  }
+}

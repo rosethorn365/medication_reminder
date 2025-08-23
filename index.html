@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medication Reminder 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="accessibility-panel">
+    <button onclick="changeFontSize(2)">A+</button>
+    <button onclick="changeFontSize(-2)">A-</button>
+    <button onclick="toggleContrast()">High Contrast</button>
+    <button onclick="toggleDyslexiaFont()">Dyslexia Font</button>
+  </div>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>Add a Medicine Reminder</h2>
+      <label>Medicine Name:</label>
+      <input type="text" id="medName">
+
+      <label>Amount:</label>
+      <div class="amount-row">
+        <input type="number" id="medAmount">
+        <select id="medUnit">
+          <option>mg</option><option>g</option><option>mcg</option><option>mL</option><option>L</option>
+          <option>IU</option><option>tablets</option><option>capsules</option><option>drops</option>
+          <option>puffs</option><option>patches</option><option>suppositories</option><option>injections</option>
+          <option>sprays</option><option>teaspoons</option><option>tablespoons</option>
+        </select>
+      </div>
+
+      <label>How to take it:</label>
+      <select id="medRoute">
+        <option>By mouth</option><option>Injection</option><option>On the skin</option><option>Breathing in</option>
+        <option>Under the tongue</option><option>In the bottom</option><option>In the vagina</option>
+        <option>On the skin patch</option><option>Into the vein</option><option>Into the muscle</option>
+        <option>Under the skin</option><option>Inside the cheek</option><option>In the nose</option>
+        <option>In the eye</option><option>In the ear</option>
+      </select>
+
+      <label>Special Instructions:</label>
+      <textarea id="medInstructions"></textarea>
+
+      <label>Time to take medicine:</label>
+      <input type="time" id="medTime">
+
+      <div class="button-row">
+        <button class="save-button" onclick="saveReminder()">Save Reminder</button>
+        <button class="clear-button" onclick="clearForm()">Clear Form</button>
+      </div>
+    </div>
+
+    <div class="reminders-box">
+      <h2>Saved Reminders</h2>
+      <ul id="reminderList"></ul>
+      <button onclick="printReminders()">Print My Reminders</button>
+    </div>
+  </div>
+
+  <audio id="alarmSound" src="alarm.mp3" preload="auto" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
