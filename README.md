@@ -2,11 +2,11 @@
 
 ---
 
-## 🧠 App Name: **Medication Reminder**
+## App Name: **Medication Reminder**
 
 ---
 
-### 🖼️ Layout Overview
+### Layout Overview
 
 - **Top Area**: Accessibility settings for better reading
 - **Middle Area**: Two boxes side by side (stacked vertically on mobile)
@@ -16,7 +16,7 @@
 
 ---
 
-### 🎨 Easy Design
+### Easy Design
 
 - **Font**: Arial, size 20px (large and readable)
 - **Colors**:
@@ -31,9 +31,9 @@
 
 ---
 
-### 🧩 Page Components
+### Page Components
 
-#### 🔧 Accessibility Panel (Top)
+#### Accessibility Panel (Top)
 
 - Buttons:
   - A+ / A- (font size)
@@ -42,7 +42,7 @@
 
 ---
 
-#### 📋 Fill in a Medicine Reminder (Left Box)
+#### Fill in a Medicine Reminder (Left Box)
 
 - **Title**: “Add a Medicine Reminder”
 - **Fields**:
@@ -61,7 +61,7 @@
 
 ---
 
-#### 🗒️ Saved Reminders (Right Box)
+#### Saved Reminders (Right Box)
 
 - **Title**: “Saved Reminders”
 - **List**:
@@ -78,7 +78,7 @@
 
 ---
 
-### 🖨️ Print Functionality
+### Print Functionality
 
 - When clicked, opens a new page with:
   - Title: **“My Medication Reminders”**
@@ -92,7 +92,7 @@
 
 ---
 
-### 🔔 Alarm Reminder (Mobile-Friendly)
+### Alarm Reminder (Mobile-Friendly)
 
 - When a reminder is saved:
   - App sets a timer using JavaScript
@@ -105,7 +105,7 @@
 
 ---
 
-### 🧪 How It Works (Behind the Scenes)
+### How It Works (Behind the Scenes)
 
 - Uses `localStorage` to save reminders:
   - Works offline
