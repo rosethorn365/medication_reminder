@@ -1,4 +1,6 @@
 
+/* Set the basic style for the whole page.
+   This makes the text easy to read and gives the page a soft background color. */
 body {
   font-family: Arial, sans-serif;
   font-size: 20px;
@@ -7,17 +9,29 @@ body {
   margin: 0;
   padding: 10px;
 }
+
+
+/* Style for the panel that holds accessibility buttons.
+   These buttons help users adjust font size, contrast, and font type. */
 .accessibility-panel {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
   flex-wrap: wrap;
 }
+
+
+/* Main container that holds the form and the list of reminders side by side.
+   It adjusts nicely on smaller screens. */
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
+
+
+/* Style for the boxes that hold the form and reminders.
+   They have a white background, padding, and rounded corners. */
 .form-box, .reminders-box {
   background-color: white;
   padding: 20px;
@@ -25,42 +39,77 @@ body {
   min-width: 300px;
   border-radius: 10px;
 }
+
+
+/* Special background color for the reminders box.
+   This light yellow helps it stand out from the form. */
 .reminders-box {
   background-color: #fff9c4;
 }
+
+
+/* Style for all buttons.
+   Adds space and makes them easier to click and read. */
 button {
   margin-top: 10px;
   padding: 10px;
   font-size: 18px;
 }
+
+
+/* Style for input fields, dropdowns, and text areas.
+   Makes them full width and easy to read. */
 textarea, input, select {
   width: 100%;
   margin-bottom: 10px;
   font-size: 18px;
 }
+
+
+/* Style for the row that holds the amount and unit side by side.
+   Adds space between them. */
 .amount-row {
   display: flex;
   gap: 10px;
 }
+
+
+/* Style for the row that holds the Save and Clear buttons.
+   Places them on opposite sides for better layout. */
 .button-row {
   display: flex;
   justify-content: space-between;
 }
+
+/* Style for the Save button.
+   Green color shows it's a positive action. */
 .save-button {
   background-color: #4CAF50;
   color: white;
 }
+
+/* Style for the Clear button.
+   Orange color shows it's a warning or reset action. */
 .clear-button {
   background-color: #FF9800;
   color: white;
 }
+
+/* High contrast mode for better visibility.
+   Useful for users with vision difficulties. */
 .high-contrast {
   background-color: black;
   color: white;
 }
+
+/* Dyslexia-friendly font style.
+   Helps users with dyslexia read the text more easily. */
 .dyslexia-font {
   font-family: 'OpenDyslexic', Arial, sans-serif;
 }
+
+/* Styles used when printing the page.
+   Removes parts that aren’t needed on paper and makes the layout clean. */
 @media print {
   body {
     background: white;
