@@ -3,11 +3,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+    <!-- This makes the page adjust properly on phones and tablets -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title that appears in the browser tab --> 
+
   <title>Medication Reminder 2</title>
+
+    <!-- This links to the CSS file that controls how the page looks -->
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- This section contains buttons that help users adjust the page for better accessibility -->
+
   <div class="accessibility-panel">
     <button onclick="changeFontSize(2)">A+</button>
     <button onclick="changeFontSize(-2)">A-</button>
@@ -15,11 +27,21 @@
     <button onclick="toggleDyslexiaFont()">Dyslexia Font</button>
   </div>
 
+    <!-- This is the main container that holds the form and the list of reminders -->
+
   <div class="container">
+
+     <!-- This box contains the form where users can add a new medicine reminder --> 
+
     <div class="form-box">
       <h2>Add a Medicine Reminder</h2>
+
+            <!-- Input for the name of the medicine -->
+
       <label>Medicine Name:</label>
       <input type="text" id="medName">
+
+         <!-- Input for the amount and unit of the medicine -->
 
       <label>Amount:</label>
       <div class="amount-row">
@@ -32,6 +54,8 @@
         </select>
       </div>
 
+         <!-- Dropdown for how the medicine should be taken -->
+
       <label>How to take it:</label>
       <select id="medRoute">
         <option>By mouth</option><option>Injection</option><option>On the skin</option><option>Breathing in</option>
@@ -41,17 +65,25 @@
         <option>In the eye</option><option>In the ear</option>
       </select>
 
+          <!-- Text area for any special instructions about the medicine -->
+
       <label>Special Instructions:</label>
       <textarea id="medInstructions"></textarea>
 
+            <!-- Input for the time the medicine should be taken -->
+
       <label>Time to take medicine:</label>
       <input type="time" id="medTime">
+
+          <!-- Buttons to save the reminder or clear the form -->
 
       <div class="button-row">
         <button class="save-button" onclick="saveReminder()">Save Reminder</button>
         <button class="clear-button" onclick="clearForm()">Clear Form</button>
       </div>
     </div>
+
+     <!-- This box shows the list of saved reminders -->
 
     <div class="reminders-box">
       <h2>Saved Reminders</h2>
@@ -60,7 +92,12 @@
     </div>
   </div>
 
+    <!-- This is the sound that plays when it's time to take medicine -->
+
   <audio id="alarmSound" src="alarm.mp3" preload="auto" loop></audio>
+
+    <!-- This links to the JavaScript file that makes the app work -->
+     
   <script src="script.js"></script>
 </body>
 </html>
