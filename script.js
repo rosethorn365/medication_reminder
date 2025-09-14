@@ -120,7 +120,7 @@ function printReminders() {
 // This function sets an alarm for the time the medicine should be taken.
 // When the time comes, it plays a sound and shows a message.
 
-function scheduleAlarm(reminder) {
+/*function scheduleAlarm(reminder) {
   const now = new Date();
   const [hours, minutes] = reminder.time.split(":");
   const alarmTime = new Date();
@@ -131,7 +131,35 @@ function scheduleAlarm(reminder) {
     document.getElementById("alarmSound").play();
     alert(`Time to take your medicine: ${reminder.name}`);
   }, delay);
+} */
+
+function scheduleAlarm(reminder) {
+  const now = new Date();
+  const [hours, minutes] = reminder.time.split(":");
+  const alarmTime = new Date();
+  alarmTime.setHours(hours, minutes, 0, 0);
+  let delay = alarmTime - now;
+  if (delay < 0) delay += 24 * 60 * 60 * 1000;
+
+  setTimeout(() => {
+    const alarmAudio = document.getElementById("alarmSound");
+    alarmAudio.loop = true; // Make sure it loops until stopped
+    alarmAudio.play();
+
+    const message = `💊 Time to take your medicine!\n\n` +
+                    `Medicine: ${reminder.name}\n` +
+                    `Amount: ${reminder.amount} ${reminder.unit}\n` +
+                    `How to take: ${reminder.route}\n` +
+                    `Instructions: ${reminder.instructions || "None"}`;
+
+    alert(message);
+
+    alarmAudio.pause();
+    alarmAudio.currentTime = 0; // Reset audio
+  }, delay);
 }
+
+
 
 // -------------------- INITIALIZATION --------------------
 
