@@ -140,16 +140,42 @@ function scheduleAlarm(reminder) {
     alarmAudio.loop = true; // Make sure it loops until stopped
     alarmAudio.play();
 
-    const message = `💊 Time to take your medicine!\n\n` +
+    /* const message = `💊 Time to take your medicine!\n\n` +
                     `Medicine: ${reminder.name}\n` +
                     `Amount: ${reminder.amount} ${reminder.unit}\n` +
                     `How to take: ${reminder.route}\n` +
                     `Instructions: ${reminder.instructions || "None"}`;
 
-    alert(message);
+    alert(message); 
 
     alarmAudio.pause();
-    alarmAudio.currentTime = 0; // Reset audio
+    alarmAudio.currentTime = 0; // Reset audio */
+
+    // Fill modal content
+    document.getElementById("modalMedName").textContent = reminder.name;
+    document.getElementById("modalMedAmount").textContent = `${reminder.amount} ${reminder.unit}`;
+    document.getElementById("modalMedRoute").textContent = reminder.route;
+    document.getElementById("modalMedInstructions").textContent = reminder.instructions || "None";
+
+    // Show modal
+    document.getElementById("reminderModal").style.display = "block";
+
+    // Stop alarm when confirmed
+    document.getElementById("confirmButton").onclick = () => {
+      alarmAudio.pause();
+      alarmAudio.currentTime = 0;
+      document.getElementById("reminderModal").style.display = "none";
+    };
+
+    // Optional: close button
+    document.getElementById("closeModal").onclick = () => {
+      alarmAudio.pause();
+      alarmAudio.currentTime = 0;
+      document.getElementById("reminderModal").style.display = "none";
+    };
+
+    
+    
   }, delay);
 }
 
