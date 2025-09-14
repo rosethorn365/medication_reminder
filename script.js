@@ -17,12 +17,6 @@ function toggleContrast() {
   document.body.classList.toggle("high-contrast");
 }
 
-// This function changes the font to one that is easier to read for people with dyslexia.
-
-function toggleDyslexiaFont() {
-  document.body.classList.toggle("dyslexia-font");
-}
-
 // -------------------- FORM MANAGEMENT --------------------
 
 // This function clears all the boxes in the medicine form.
