@@ -91,6 +91,21 @@
     </div>
   </div>
 
+       <!-- This box shows the pop up reminder that appears on the set alarm time -->
+  
+<div id="reminderModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close-button">&times;</span>
+    <h2>🔔 It's time to take your medicine!</h2>
+    <p><strong>💊 Medicine:</strong> <span id="modalMedName"></span></p>
+    <p><strong>  Amount:</strong> <span id="modalMedAmount"></span></p>
+    <p><strong>  How to take:</strong> <span id="modalMedRoute"></span></p>
+    <p><strong>📝 Instructions:</strong> <span id="modalMedInstructions"></span></p>
+    <button id="confirmButton">✅ I've taken my medicine</button>
+  </div>
+</div>
+
+
     <!-- This is the sound that plays when it's time to take medicine -->
 
   <audio id="alarmSound" src="alarm.mp3" preload="auto" loop></audio>
