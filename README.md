@@ -1,10 +1,10 @@
 
 
----
+
 
 ## App Name: **Medication Reminder**
 
----
+
 
 ### Layout Overview
 
@@ -14,7 +14,7 @@
   - **Right Box**: See your saved reminders
 - **Bottom of Right Box**: Button to print your reminders
 
----
+
 
 ### Easy Design
 
@@ -27,9 +27,8 @@
 - **Accessibility Settings**:
   - Increase/decrease font size
   - High contrast toggle
-  - Dyslexia-friendly font toggle
 
----
+
 
 ### Page Components
 
@@ -38,9 +37,8 @@
 - Buttons:
   - A+ / A- (font size)
   - High Contrast
-  - Dyslexia Font
 
----
+
 
 #### Fill in a Medicine Reminder (Left Box)
 
@@ -52,14 +50,14 @@
      - Dropdown for units:
        - mg, g, mcg, mL, L, IU, tablets, capsules, drops, puffs, patches, suppositories, injections, sprays, teaspoons, tablespoons
   3. **How to take the medicine** (dropdown menu):
-     - By mouth, Injection, On the skin, Breathing in, Under the tongue, In the bottom, In the vagina, On the skin patch, Into the vein, Into the muscle, Under the skin, Inside the cheek, In the nose, In the eye, In the ear
+     - By mouth, Injection, On the skin, Breathing in, Under the tongue, On the skin patch, Into the vein, Into the muscle, Under the skin, Inside the cheek, In the nose, In the eye, In the ear
   4. **Special Instructions** (textarea)
   5. **Time to take medicine** (time input)
 - **Buttons**:
   - **Save Reminder** – left side, styled in green or blue
   - **Clear Form** – right side, styled in orange or red to avoid confusion
 
----
+
 
 #### Saved Reminders (Right Box)
 
@@ -76,7 +74,7 @@
   - Button: **“Print My Reminders”**
     - Opens a printer-friendly page
 
----
+
 
 ### Print Functionality
 
@@ -90,7 +88,7 @@
     - **How to Take**
     - **Notes**
 
----
+
 
 ### Alarm Reminder (Mobile-Friendly)
 
@@ -99,11 +97,17 @@
   - At the scheduled time:
     - **alarm.mp3 ringtone plays automatically**
     - **Alarm loops until dismissed**
-    - A popup message appears: “Time to take your medicine: [Medicine Name]”
+    - A message appears:
+🔔 Alert Emoji: Signals that it's time for action.
+💊 Medicine: Shows the name of the medication.
+    Amount: Displays the dosage and unit (e.g., 2 tablets).
+    How to take: Indicates the route (e.g., by mouth, injection).
+📝 Instructions: Provides any special notes (e.g., take with food).
+✅ Confirmation: Encourages the user to acknowledge the reminder.
 - Works on mobile browsers
 - Requires user interaction (e.g. tapping Save) to enable sound playback
 
----
+
 
 ### How It Works (Behind the Scenes)
 
@@ -118,4 +122,5 @@
 - Accessibility settings are stored locally
 
 
----
+
+The Medication Reminder app uses localStorage to save reminders directly in the user's browser. This means the data is stored locally on the device, allowing the app to work offline without requiring a login or internet connection. Reminders persist even after the browser is closed or the device is restarted, and users can delete them individually. While localStorage is not encrypted and should not be used for sensitive personal data, it is a suitable and secure choice for storing simple medication reminders. It keeps the app lightweight, fast, and easy to use, especially for older adults or caregivers who benefit from a straightforward, no-login experience. If the app were to handle more sensitive information or support multiple users, a more secure storage solution like server-side databases or encrypted cloud storage would be recommended.
