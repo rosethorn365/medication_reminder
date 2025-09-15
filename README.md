@@ -98,12 +98,12 @@
     - **alarm.mp3 ringtone plays automatically**
     - **Alarm loops until dismissed**
     - A message appears:
-🔔 Alert Emoji: Signals that it's time for action.
-💊 Medicine: Shows the name of the medication.
+    Alert Emoji: Signals that it's time for action.
+    Medicine: Shows the name of the medication.
     Amount: Displays the dosage and unit (e.g., 2 tablets).
     How to take: Indicates the route (e.g., by mouth, injection).
-📝 Instructions: Provides any special notes (e.g., take with food).
-✅ Confirmation: Encourages the user to acknowledge the reminder.
+    Instructions: Provides any special notes (e.g., take with food).
+    Confirmation: Encourages the user to acknowledge the reminder.
 - Works on mobile browsers
 - Requires user interaction (e.g. tapping Save) to enable sound playback
 
