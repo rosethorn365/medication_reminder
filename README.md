@@ -124,3 +124,5 @@
 
 
 The Medication Reminder app uses localStorage to save reminders directly in the user's browser. This means the data is stored locally on the device, allowing the app to work offline without requiring a login or internet connection. Reminders persist even after the browser is closed or the device is restarted, and users can delete them individually. While localStorage is not encrypted and should not be used for sensitive personal data, it is a suitable and secure choice for storing simple medication reminders. It keeps the app lightweight, fast, and easy to use, especially for older adults or caregivers who benefit from a straightforward, no-login experience. If the app were to handle more sensitive information or support multiple users, a more secure storage solution like server-side databases or encrypted cloud storage would be recommended.
+
+
