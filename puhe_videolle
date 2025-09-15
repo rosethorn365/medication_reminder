@@ -1,0 +1,17 @@
+
+## **Esityspuhe  – Medication Reminder -sovellus**
+
+> Hei! Tässä videossa esittelen tekemäni **Medication Reminder** -sovelluksen, joka on suunniteltu erityisesti helpottamaan lääkkeiden ottamisen muistamista. Sovellus toimii selaimessa, ja se on helppokäyttöinen myös ikääntyneille tai henkilöille, joilla on lukemisen tai näkemisen haasteita.
+
+> Sovelluksen yläosassa on **saavutettavuuspaneeli**, josta voi suurentaa tai pienentää fonttia sekä vaihtaa korkean kontrastin tilaan. Tämä parantaa luettavuutta eri käyttäjäryhmille.
+
+> Keskellä sivua on kaksi laatikkoa: vasemmalla voit **lisätä uuden lääkemuistutuksen**, ja oikealla näet **kaikki tallennetut muistutukset**. Jokaisessa muistutuksessa näkyy lääkkeen nimi, määrä, ottotapa, erityisohjeet ja kellonaika. Voit myös poistaa yksittäisiä muistutuksia helposti.
+
+> Kun muistutus tallennetaan, sovellus asettaa **hälytyksen JavaScriptin avulla**. Kun on aika ottaa lääke, kuuluu automaattisesti **hälytysääni**, ja näytölle ilmestyy **selkeä viesti**, jossa käytetään **emojien avulla visuaalisia merkkejä**: 💊 lääkkeen nimi, 📦 määrä, 🧭 ottotapa ja 📝 erityisohjeet. Käyttäjä kuittaa muistutuksen painamalla OK, jolloin hälytysääni loppuu.
+
+> Sovellus toimii myös **mobiililaitteilla**, ja muistutukset säilyvät, vaikka selain suljetaan. Tämä onnistuu, koska tiedot tallennetaan **localStorageen**, eli paikallisesti käyttäjän laitteelle. Tämä ratkaisu on turvallinen ja yksinkertainen, koska se ei vaadi kirjautumista eikä internet-yhteyttä. Sovellus ei tallenna arkaluontoisia tietoja, joten localStorage on tässä tapauksessa hyvä ja kevyt vaihtoehto.
+
+> Lopuksi, sovelluksessa on myös **tulostustoiminto**, jolla käyttäjä voi tulostaa kaikki muistutukset selkeässä taulukkomuodossa esimerkiksi hoitajan tai omaisen käyttöön.
+
+> Kiitos kun katsoit! Jos haluat tutustua koodiin tarkemmin, löydät sen GitHubista. Sovellus on rakennettu HTML:n, CSS:n ja JavaScriptin avulla, ja se on hyvä esimerkki saavutettavasta ja käytännöllisestä web-sovelluksesta.
+
