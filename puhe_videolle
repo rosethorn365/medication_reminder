@@ -1,20 +1,37 @@
+Esityspuhe – Medication Reminder -sovellus 
 
-## **Esityspuhe  – Medication Reminder -sovellus**
+Hei! Tässä videossa esittelen tekemäni Medication Reminder -sovelluksen, jonka tarkoituksena on helpottaa lääkkeiden ottamisen muistamista. Sovellus toimii selaimessa. 
 
-> Hei! Tässä videossa esittelen tekemäni **Medication Reminder** -sovelluksen, joka on suunniteltu erityisesti helpottamaan lääkkeiden ottamisen muistamista. Sovellus toimii selaimessa, ja se on helppokäyttöinen myös ikääntyneille tai henkilöille, joilla on lukemisen tai näkemisen haasteita.
+Sivun yläosassa on saavutettavuuspaneeli, josta käyttäjä voi säätää fonttikokoa ja vaihtaa korkean kontrastin tilaan. Tämä parantaa luettavuutta ja tukee esteetöntä käyttöä. 
 
-> Sovelluksen yläosassa on **saavutettavuuspaneeli**, josta voi suurentaa tai pienentää fonttia sekä vaihtaa korkean kontrastin tilaan. Tämä parantaa luettavuutta eri käyttäjäryhmille.
+Sovelluksen keskiosassa on kaksi laatikkoa: vasemmalla voi lisätä uuden lääkemuistutuksen, ja oikealla näkyvät kaikki tallennetut muistutukset. Jokaisessa muistutuksessa esitetään lääkkeen nimi, määrä, ottotapa, erityisohjeet ja kellonaika. Muistutuksia voi myös poistaa helposti. 
 
-> Keskellä sivua on kaksi laatikkoa: vasemmalla voit **lisätä uuden lääkemuistutuksen**, ja oikealla näet **kaikki tallennetut muistutukset**. Jokaisessa muistutuksessa näkyy lääkkeen nimi, määrä, ottotapa, erityisohjeet ja kellonaika. Voit myös poistaa yksittäisiä muistutuksia helposti.
+Kun muistutus tallennetaan, sovellus asettaa hälytyksen JavaScriptin avulla. Kun on aika ottaa lääke, kuuluu hälytysääni, ja näytölle ilmestyy selkeä viesti, jossa käytetään emojien avulla visuaalisia merkkejä. Käyttäjä kuittaa muistutuksen painamalla OK, jolloin hälytysääni loppuu. 
 
-> Kun muistutus tallennetaan, sovellus asettaa **hälytyksen JavaScriptin avulla**. Kun on aika ottaa lääke, kuuluu automaattisesti **hälytysääni**, ja näytölle ilmestyy **selkeä viesti**, jossa käytetään **emojien avulla visuaalisia merkkejä**: 💊 lääkkeen nimi, 📦 määrä, 🧭 ottotapa ja 📝 erityisohjeet. Käyttäjä kuittaa muistutuksen painamalla OK, jolloin hälytysääni loppuu.
+Sovellus toimii myös mobiililaitteilla, ja muistutukset säilyvät, vaikka selain suljetaan. Tämä on toteutettu localStoragen avulla, jolloin tiedot tallennetaan paikallisesti käyttäjän laitteelle. Ratkaisu on kevyt ja turvallinen, koska sovellus ei käsittele arkaluontoisia tietoja eikä vaadi kirjautumista tai internet-yhteyttä. 
 
-> Sovellus toimii myös **mobiililaitteilla**, ja muistutukset säilyvät, vaikka selain suljetaan. Tämä onnistuu, koska tiedot tallennetaan **localStorageen**, eli paikallisesti käyttäjän laitteelle. Tämä ratkaisu on turvallinen ja yksinkertainen, koska se ei vaadi kirjautumista eikä internet-yhteyttä. Sovellus ei tallenna arkaluontoisia tietoja, joten localStorage on tässä tapauksessa hyvä ja kevyt vaihtoehto.
+Lisäksi sovelluksessa on tulostustoiminto, jolla käyttäjä voi tulostaa kaikki muistutukset selkeässä taulukkomuodossa esimerkiksi hoitajan tai omaisen käyttöön. 
 
-> Lopuksi, sovelluksessa on myös **tulostustoiminto**, jolla käyttäjä voi tulostaa kaikki muistutukset selkeässä taulukkomuodossa esimerkiksi hoitajan tai omaisen käyttöön.
+ 
 
-> Kiitos kun katsoit! Jos haluat tutustua koodiin tarkemmin, löydät sen GitHubista. Sovellus on rakennettu HTML:n, CSS:n ja JavaScriptin avulla, ja se on hyvä esimerkki saavutettavasta ja käytännöllisestä web-sovelluksesta.
+Opintojeni aikana olen tutustunut HTML:n, CSS:n, JavaScriptin ja jonkin verran myös PHP:n käyttöön, ja olen hyödyntänyt näitä teknologioita kouluprojekteissa web-kehityksessä. Ajattelin, että olisi kiinnostavaa kokeilla, voisinko rakentaa toimivan sovelluksen näillä taidoilla – ja tämä projekti oli siihen erinomainen tilaisuus. 
 
-Opintojen aikana olen tutustunut HTML:n, CSS:n, JavaScriptin ja hieman myös PHP:n käyttöön, ja olen käyttänyt näitä kouluprojekteissa web-kehityksessä. Ajattelin, että olisi hauskaa kokeilla tehdä oma sovellus näillä taidoilla – vaikka nykyään monet sovellukset rakennetaan helpommin esimerkiksi Azuren kautta.
+HTML määrittelee sovelluksen rakenteen, CSS huolehtii visuaalisesta ilmeestä ja JavaScript tuo mukaan toiminnallisuuden, kuten saavutettavuusasetukset, muistutusten tallennuksen, hälytykset ja tulostuksen. Sovellus toimii täysin selaimessa ilman taustapalvelinta. 
 
-HTML määrittelee sovelluksen rakenteen: saavutettavuuspaneelin, lomakkeen ja muistutuslistan. CSS tuo visuaalisuuden – selkeät värit, isot fontit ja responsiivisen asettelun. JavaScript hoitaa toiminnallisuuden, kuten muistutusten tallennuksen, hälytykset ja tulostuksen.
+ 
+
+Nykyään monet sovellukset rakennetaan kuitenkin pilvipalveluiden, kuten Microsoft Azuren, avulla. Azure tarjoaa valmiita ratkaisuja, kuten: 
+
+App Service sovelluksen julkaisuun 
+
+Functions ajastettuihin toimintoihin 
+
+Cosmos DB tietojen tallentamiseen pilveen 
+
+Notification Hubs muistutusten lähettämiseen eri laitteille 
+
+Azure AD B2C käyttäjien kirjautumiseen ja hallintaan 
+
+Näiden avulla sovellus olisi ollut skaalautuvampi, turvallisempi ja käytettävissä eri laitteilla ja käyttäjätileillä. Tässä projektissa halusin kuitenkin keskittyä itse sovelluksen logiikkaan ja käyttöliittymään – ja siihen HTML, CSS ja JavaScript tarjosivat hyvän ja konkreettisen lähtökohdan. 
+
+Kiitos kun katsoit! 
