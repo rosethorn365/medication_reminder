@@ -15,3 +15,6 @@
 
 > Kiitos kun katsoit! Jos haluat tutustua koodiin tarkemmin, löydät sen GitHubista. Sovellus on rakennettu HTML:n, CSS:n ja JavaScriptin avulla, ja se on hyvä esimerkki saavutettavasta ja käytännöllisestä web-sovelluksesta.
 
+Opintojen aikana olen tutustunut HTML:n, CSS:n, JavaScriptin ja hieman myös PHP:n käyttöön, ja olen käyttänyt näitä kouluprojekteissa web-kehityksessä. Ajattelin, että olisi hauskaa kokeilla tehdä oma sovellus näillä taidoilla – vaikka nykyään monet sovellukset rakennetaan helpommin esimerkiksi Azuren kautta.
+
+HTML määrittelee sovelluksen rakenteen: saavutettavuuspaneelin, lomakkeen ja muistutuslistan. CSS tuo visuaalisuuden – selkeät värit, isot fontit ja responsiivisen asettelun. JavaScript hoitaa toiminnallisuuden, kuten muistutusten tallennuksen, hälytykset ja tulostuksen.
